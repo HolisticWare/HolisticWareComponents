@@ -2,10 +2,10 @@
 <metadata>
 
     <attr
-        path="/api/package[@name='org.chromium.net']"
+        path="/api/package[@name='com.mopub.mobileads']"
         name="managedName"
         >
-        HolisticWare.MoPub
+        HolisticWare.MoPub.Mobileads
     </attr>
     
 </metadata>
