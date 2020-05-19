@@ -20,14 +20,14 @@
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>HolisticWare.Mopub</PackageId>
-    <PackageVersion>5.4.1</PackageVersion>
+    <PackageVersion>5.12.0</PackageVersion>
     <Title>HolisticWare.Mopub</Title>
-    <PackageDescription>Bindings for Xamarin Chromium.CroNet.Embedded package</PackageDescription>
-    <Owners>Microsoft</Owners>
-    <Authors>Microsoft</Authors>
-    <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
-    <PackageLicenseUrl>https://go.microsoft.com/fwlink/?linkid=2109280</PackageLicenseUrl>
-    <PackageProjectUrl>https://go.microsoft.com/fwlink/?linkid=2109279</PackageProjectUrl>
+    <PackageDescription>Bindings for Mobup package</PackageDescription>
+    <Owners>HolisticWare</Owners>
+    <Authors>HolisticWare</Authors>
+    <Copyright>© HolisticWare. All rights reserved.</Copyright>
+    <PackageLicenseUrl>https://github.com/HolisticWare/HolisticWareComponents/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/HolisticWare/HolisticWareComponents/tree/master/XPlat/Mopub</PackageProjectUrl>
     <RequireLicenceAcceptance>true</RequireLicenceAcceptance>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>xamarin, android, bindings, mopub </PackageTags>
@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="..\..\externals\android\mopub-sdk-$(PackageVersion).aar">
-      <Link>Jars\mopub-sdk-$(PackageVersion).aar</Link>
+      <Link>Jars\mopub-sdk-5.12.0.aar</Link>
     </LibraryProjectZip>
   </ItemGroup>
   <ItemGroup>

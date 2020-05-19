@@ -1,0 +1,37 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    
+    <attr
+        path="/api/package[@name='com.mopub.mobileads.dfp.adapters']/class[@name='DownloadDrawablesAsync']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object...']]"
+        name="managedReturn"
+        >
+        Java.Lang.Object
+    </attr>
+
+    <remove-node
+        path="/api/package[@name='com.mopub.mobileads.dfp.adapters']/class[@name='DownloadDrawablesAsync']/method[@name='doInBackground']"
+        />
+    <add-node
+        path="/api/package[@name='com.mopub.mobileads.dfp.adapters']/class[@name='DownloadDrawablesAsync']"
+        >
+        <!--
+        java.util.HashMap&lt;java.lang.String, android.graphics.drawable.Drawable&gt;
+        -->
+      <method 
+            visibility="protected" static="false" abstract="false" return="java.lang.Object" name="doInBackground" 
+            deprecated="not deprecated" final="false" bridge="false" native="false"
+            synchronized="false" synthetic="false" 
+            >
+        <parameter type="java.lang.Object..."  name="params" >
+        </parameter>
+      </method>
+        
+    </add-node>
+    
+</metadata>
