@@ -7,22 +7,28 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
     
+    <!--
+    return = java.util.HashMap&lt;java.lang.String, android.graphics.drawable.Drawable&gt;
+    -->
+    <!--
+    This one alone should do the trick, but NO
+    -->
     <attr
         path="/api/package[@name='com.mopub.mobileads.dfp.adapters']/class[@name='DownloadDrawablesAsync']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object...']]"
         name="managedReturn"
         >
         Java.Lang.Object
     </attr>
-
+    
+    <!--
+    Workaround for ???
+    -->
     <remove-node
-        path="/api/package[@name='com.mopub.mobileads.dfp.adapters']/class[@name='DownloadDrawablesAsync']/method[@name='doInBackground']"
-        />
+    path="/api/package[@name='com.mopub.mobileads.dfp.adapters']/class[@name='DownloadDrawablesAsync']/method[@name='doInBackground']"
+    />
     <add-node
         path="/api/package[@name='com.mopub.mobileads.dfp.adapters']/class[@name='DownloadDrawablesAsync']"
         >
-        <!--
-        java.util.HashMap&lt;java.lang.String, android.graphics.drawable.Drawable&gt;
-        -->
       <method 
             visibility="protected" static="false" abstract="false" return="java.lang.Object" name="doInBackground" 
             deprecated="not deprecated" final="false" bridge="false" native="false"
@@ -30,8 +36,8 @@
             >
         <parameter type="java.lang.Object..."  name="params" >
         </parameter>
-      </method>
-        
+      </method>        
     </add-node>
+        
     
 </metadata>
