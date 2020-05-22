@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+
+    <attr
+        path="/api/package[@name='com.mopub.mobileads']"
+        name="managedName"
+        >
+        HolisticWare.MoPub.Mobileads
+    </attr>
+    
+</metadata>
