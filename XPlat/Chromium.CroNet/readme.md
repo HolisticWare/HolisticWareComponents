@@ -43,5 +43,15 @@ that supports QUIC. Most google & GCP services including Youtube support QUIC by
 
 Cloudflare, Akamai, and Fastly support QUIC but needs to be manually enabled.
 
+## CroNet Samples
 
+*   https://github.com/GoogleChromeLabs/cronet-sample
+
+*   https://chromium.googlesource.com/chromium/src/+/master/components/cronet/README.md
+
+*   https://github.com/tencentyun/clb-quic-demo
+
+*   https://www.gsrikar.com/2018/12/cronet-chromium-network-stack.html
+
+*   https://github.com/gSrikar/CronetExample
 
